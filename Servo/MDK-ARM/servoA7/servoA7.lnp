@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"servoa7\startup_stm32f103xb.o"
+"servoa7\main.o"
+"servoa7\stm32f1xx_it.o"
+"servoa7\stm32f1xx_hal_msp.o"
+"servoa7\stm32f1xx_hal_gpio_ex.o"
+"servoa7\stm32f1xx_hal_tim.o"
+"servoa7\stm32f1xx_hal_tim_ex.o"
+"servoa7\stm32f1xx_hal.o"
+"servoa7\stm32f1xx_hal_rcc.o"
+"servoa7\stm32f1xx_hal_rcc_ex.o"
+"servoa7\stm32f1xx_hal_gpio.o"
+"servoa7\stm32f1xx_hal_dma.o"
+"servoa7\stm32f1xx_hal_cortex.o"
+"servoa7\stm32f1xx_hal_pwr.o"
+"servoa7\stm32f1xx_hal_flash.o"
+"servoa7\stm32f1xx_hal_flash_ex.o"
+"servoa7\stm32f1xx_hal_exti.o"
+"servoa7\system_stm32f1xx.o"
+--strict --scatter "servoA7\servoA7.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "servoA7.map" -o servoA7\servoA7.axf
